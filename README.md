@@ -1,16 +1,22 @@
-# Vue 3 + TypeScript + Vite
+> 第三方库
+1. 时间处理：[day](https://day.js.org)
+2. 数学计算：[math](https://mathjs.org)
+3. 离线储存：[localForage](https://localforage.docschina.org)
+4. js工具库：[lodash](https://www.lodashjs.com)
+5. 状态管理：[pinia](https://pinia.vuejs.org)
+6. 路由：[vue-router](https://router.vuejs.org)
+7. 持久化：[pinia-plugin-persist](https://github.com/Seb-L/pinia-plugin-persist)
+8. 国际化：[vue-i18n](https://vue-i18n.intlify.dev)
+9. 组件库：[element-plus](https://element-plus.org)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
-
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
-
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+### TODO
+- [ ] 引入 `math`
+- [ ] 引入 `localForage`
+- [ ] 引入 `lodash`
+- [ ] 引入 `vue-router`
+- [ ] 引入 `vue-i18n`
+- [ ] 引入 `element-plus`
+- [ ] 引入 `pinia` 
+- [ ] 引入 `pinia-plugin-persist` 
+- [ ] 引入 `day`
+- [ ] 引入 `husky` 
