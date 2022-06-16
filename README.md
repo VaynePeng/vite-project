@@ -10,13 +10,14 @@
 9. 组件库：[element-plus](https://element-plus.org)
 
 ### TODO
-- [ ] 引入 `math`
+- [x] 引入 `math`
 - [ ] 引入 `localForage`
 - [ ] 引入 `lodash`
-- [ ] 引入 `vue-router`
+- [x] 引入 `vue-router`
 - [ ] 引入 `vue-i18n`
-- [ ] 引入 `element-plus`
+- [x] 引入 `element-plus`
 - [ ] 引入 `pinia` 
 - [ ] 引入 `pinia-plugin-persist` 
 - [ ] 引入 `day`
 - [ ] 引入 `husky` 
+- [x] 引入 `vue-use` 

@@ -25,6 +25,8 @@
     "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.9",
     "vue-router": "4",
-    "vue-tsc": "^0.34.7"
+    "vue-tsc": "^0.34.7",
+    "@vueuse/core": "^8.6.0",
+    "mathjs": "^10.6.1"
   }
 }
