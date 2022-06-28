@@ -11,17 +11,17 @@ interface Login {
   password: string
 }
 
-const form = reactive<Login>({
+const loginForm = reactive<Login>({
   username: '',
   password: ''
 })
 
-const checkFormData = (): boolean => {
+const checkFormDataFull = (form: Login): boolean => {
   return Object.values(form).every((element) => element !== '')
 }
 
 const handleLogin = (): void => {
-  const pass = checkFormData()
+  const pass = checkFormDataFull(loginForm)
   if (!pass) {
     ElMessage({
       message: '请输入用户名和密码',
@@ -40,12 +40,12 @@ const handleLogin = (): void => {
       <form className="login-form">
         <div className="system-name">数字化租赁运营管理系统</div>
         <el-input
-          v-model="form.username"
+          v-model="loginForm.username"
           class="login-form--input"
           placeholder="请输入用户名"
         />
         <el-input
-          v-model="form.password"
+          v-model="loginForm.password"
           class="login-form--input"
           type="password"
           show-password
