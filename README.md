@@ -12,12 +12,12 @@
 ### TODO
 - [x] 引入 `math`
 - [ ] 引入 `localForage`
-- [ ] 引入 `lodash`
+- [x] 引入 `lodash`
 - [x] 引入 `vue-router`
 - [ ] 引入 `vue-i18n`
 - [x] 引入 `element-plus`
-- [ ] 引入 `pinia` 
+- [x] 引入 `pinia` 
 - [ ] 引入 `pinia-plugin-persist` 
-- [ ] 引入 `day`
-- [ ] 引入 `husky` 
+- [x] 引入 `day`
+- [x] 引入 `husky` 
 - [x] 引入 `vue-use` 

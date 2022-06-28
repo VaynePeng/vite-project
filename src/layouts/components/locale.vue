@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import { Sunny } from '@element-plus/icons-vue'
-import { localeMap } from '@/locales'
+import { Sunny } from "@element-plus/icons-vue";
+import { LANG, localeMap } from "@/locales";
+import { useLangue } from "@/store";
+
+const langue = useLangue();
+
+const handleChangeLang = (lang: LANG): void => {
+  langue.changeLang(lang);
+};
 </script>
 
 <template>
@@ -12,9 +19,11 @@ import { localeMap } from '@/locales'
     </div>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item v-for="item in localeMap" :key="item.lang">
-          {{ item.name }}
-        </el-dropdown-item>
+        <template v-for="item in localeMap" :key="item.lang">
+          <el-dropdown-item @click="handleChangeLang(item.lang)">
+            {{ item.name }}
+          </el-dropdown-item>
+        </template>
       </el-dropdown-menu>
     </template>
   </el-dropdown>
@@ -24,7 +33,10 @@ import { localeMap } from '@/locales'
 .locale {
   &--content {
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    padding: 0 var(--menu-padding);
   }
 }
 </style>

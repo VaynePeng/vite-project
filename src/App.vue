@@ -1,7 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { elementLocale } from "@/locales";
+import { useLangue } from "./store";
+
+const langue = useLangue();
+</script>
 
 <template>
-  <el-config-provider>
+  <el-config-provider :locale="elementLocale[langue.lang]">
     <router-view />
   </el-config-provider>
 </template>

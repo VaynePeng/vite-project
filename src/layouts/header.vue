@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import UserInfo from './components/user-info.vue'
-import Locale from './components/locale.vue'
+import UserInfo from "./components/user-info.vue";
+import Locale from "./components/locale.vue";
 </script>
 
 <template>
   <div class="header full-height-flex">
-    <div class="header--item full-height-flex">
-      <Locale />
-    </div>
-    <div class="header--item full-height-flex">
-      <UserInfo />
-    </div>
+    <Locale class="header--item full-height-flex" />
+    <UserInfo class="header--item full-height-flex" />
   </div>
 </template>
 
@@ -22,12 +18,11 @@ import Locale from './components/locale.vue'
 }
 .header {
   justify-content: flex-end;
-  box-shadow: 0 1px 3px #f5f5f5;
+  box-shadow: 0 1px 3px var(--box-shadow-color);
   &--item {
     cursor: pointer;
-    padding: 0 10px;
     &:hover {
-      background-color: #f6f6f6;
+      background-color: var(--hover-background-color);
     }
   }
 }

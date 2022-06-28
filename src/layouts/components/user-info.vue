@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import avatar from '@/assets/images/avatar.jpg'
+import avatar from "@/assets/images/avatar.jpg";
 </script>
 
 <template>
@@ -22,6 +22,8 @@ import avatar from '@/assets/images/avatar.jpg'
   &--content {
     display: flex;
     align-items: center;
+    height: 100%;
+    padding: 0 var(--menu-padding);
   }
   &--avatar {
     width: 25px;

@@ -1,12 +1,19 @@
+import elementLocale from "./ element-ui";
+
+enum LANG {
+  ZH_CN = "zhCn",
+  EN = "en",
+}
+
 const localeMap = [
   {
-    lang: 'zh-CN',
-    name: '简体中文'
+    lang: LANG.ZH_CN,
+    name: "简体中文",
   },
   {
-    lang: 'en',
-    name: 'English'
-  }
-]
+    lang: LANG.EN,
+    name: "English",
+  },
+];
 
-export { localeMap }
+export { localeMap, LANG, elementLocale };
