@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import UserInfo from "./components/user-info.vue";
-import Locale from "./components/locale.vue";
+import UserInfo from './components/user-info.vue'
+import Locale from './components/locale.vue'
 </script>
 
 <template>

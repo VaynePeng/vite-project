@@ -1,8 +1,8 @@
-import en from "element-plus/lib/locale/lang/en";
+import en from 'element-plus/lib/locale/lang/en'
 
 export default {
-  name: "en",
+  name: 'en',
   el: {
-    ...en.el,
-  },
-};
+    ...en.el
+  }
+}

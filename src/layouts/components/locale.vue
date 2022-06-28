@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { Sunny } from "@element-plus/icons-vue";
-import { LANG, localeMap } from "@/locales";
-import { useLangue } from "@/store";
+import { Sunny } from '@element-plus/icons-vue'
+import { LANG, localeMap } from '@/locales'
+import { useLangue } from '@/store'
 
-const langue = useLangue();
+const langue = useLangue()
 
 const handleChangeLang = (lang: LANG): void => {
-  langue.changeLang(lang);
-};
+  langue.changeLang(lang)
+}
 </script>
 
 <template>

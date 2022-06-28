@@ -1,8 +1,8 @@
-import zhCn from "element-plus/lib/locale/lang/zh-cn";
+import zhCn from 'element-plus/lib/locale/lang/zh-cn'
 
 export default {
-  name: "zhCn",
+  name: 'zhCn',
   el: {
-    ...zhCn.el,
-  },
-};
+    ...zhCn.el
+  }
+}

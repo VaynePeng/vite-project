@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useLangue } from "@/store";
+import { useLangue } from '@/store'
 
-const langStore = useLangue();
+const langStore = useLangue()
 </script>
 
 <template>

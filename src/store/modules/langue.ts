@@ -1,19 +1,19 @@
-import { defineStore } from "pinia";
-import { LANG } from "@/locales";
+import { defineStore } from 'pinia'
+import { LANG } from '@/locales'
 
 interface State {
-  lang: LANG;
+  lang: LANG
 }
 
-const useLangue = defineStore("langue", {
+const useLangue = defineStore('langue', {
   state: (): State => ({
-    lang: LANG.ZH_CN,
+    lang: LANG.ZH_CN
   }),
   actions: {
     changeLang(lang: LANG) {
-      this.lang = lang;
-    },
-  },
-});
+      this.lang = lang
+    }
+  }
+})
 
-export default useLangue;
+export default useLangue

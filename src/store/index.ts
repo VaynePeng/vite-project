@@ -1,6 +1,6 @@
-import { createPinia } from "pinia";
-import useLangue from "./modules/langue";
+import { createPinia } from 'pinia'
+import useLangue from './modules/langue'
 
-const pinia = createPinia();
+const pinia = createPinia()
 
-export { pinia as default, useLangue };
+export { pinia as default, useLangue }
