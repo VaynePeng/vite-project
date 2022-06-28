@@ -17,15 +17,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
-      '@assets': resolve(__dirname, 'src/assets'),
-      '@components': resolve(__dirname, 'src/components'),
-      '@views': resolve(__dirname, 'src/views'),
-      '@utils': resolve(__dirname, 'src/utils'),
-      '@locales': resolve(__dirname, 'src/locales'),
-      '@hooks': resolve(__dirname, 'src/hooks'),
-      '@plugins': resolve(__dirname, 'src/plugins'),
-      '@layouts': resolve(__dirname, 'src/layouts')
+      '@': resolve(__dirname, 'src')
     }
   },
   server: {

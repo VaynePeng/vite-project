@@ -1,6 +1,6 @@
 import { RouteRecordRaw } from 'vue-router'
 import { HomeFilled } from '@element-plus/icons-vue'
-import Layout from '@layouts/index.vue'
+import Layout from '@/layouts/index.vue'
 
 const menuList: RouteRecordRaw[] = [
   {
