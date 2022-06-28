@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { elementLocale } from "@/locales";
-import { useLangue } from "./store";
+import { elementLocale } from '@/locales'
+import { useLangue } from './store'
 
-const langue = useLangue();
+const langue = useLangue()
 </script>
 
 <template>
