@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import router from '@/router'
 import pinia from '@/store'
+import 'element-plus/dist/index.css'
 import '@/assets/styles/element.less'
 import '@/assets/styles/index.less'
 
