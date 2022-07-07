@@ -14,7 +14,7 @@
 - [ ] 引入 `localForage`
 - [x] 引入 `lodash`
 - [x] 引入 `vue-router`
-- [ ] 引入 `vue-i18n`
+- [x] 引入 `vue-i18n`
 - [x] 引入 `element-plus`
 - [x] 引入 `pinia` 
 - [ ] 引入 `pinia-plugin-persist` 

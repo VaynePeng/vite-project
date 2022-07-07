@@ -1,19 +1,14 @@
-import elementLocale from './ element-ui'
+import { createI18n } from 'vue-i18n'
+import elementLocale from '@/locales/ element-ui'
+import { LANGUE, localeMap } from './config'
+import langue from './langue'
 
-enum LANG {
-  ZH_CN = 'zhCn',
-  EN = 'en'
-}
-
-const localeMap = [
-  {
-    lang: LANG.ZH_CN,
-    name: '简体中文'
-  },
-  {
-    lang: LANG.EN,
-    name: 'English'
+const i18n = createI18n({
+  locale: LANGUE.ZH_CN,
+  fallbackLocale: LANGUE.ZH_CN,
+  messages: {
+    ...langue
   }
-]
+})
 
-export { localeMap, LANG, elementLocale }
+export { LANGUE, localeMap, elementLocale, i18n }

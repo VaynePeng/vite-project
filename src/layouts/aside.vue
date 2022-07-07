@@ -3,13 +3,7 @@ import { menuList } from '@/router/routes'
 </script>
 
 <template>
-  <el-menu
-    active-text-color="#ffffff"
-    background-color="#001529"
-    class="aside"
-    default-active="0"
-    text-color="#bfcbd9"
-  >
+  <el-menu class="aside" default-active="0">
     <template v-for="(item, index) in menuList" :key="index">
       <template v-if="item.children?.length">
         <el-sub-menu :index="`${index}`">
@@ -29,6 +23,7 @@ import { menuList } from '@/router/routes'
         </el-sub-menu>
       </template>
       <template v-else>
+        <!-- index 类型必须为 string -->
         <el-menu-item :index="`${index}`">
           <el-icon>
             <component :is="item.meta?.icon" />

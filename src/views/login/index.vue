@@ -38,7 +38,7 @@ const handleLogin = (): void => {
   <div className="login">
     <div className="login-context">
       <form className="login-form">
-        <div className="system-name">数字化租赁运营管理系统</div>
+        <div className="system-name">{{ $t('systemName') }}</div>
         <el-input
           v-model="loginForm.username"
           class="login-form--input"
@@ -56,7 +56,7 @@ const handleLogin = (): void => {
           type="primary"
           @click="handleLogin"
         >
-          登录
+          {{ $t('signIn') }}
         </el-button>
       </form>
     </div>
