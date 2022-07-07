@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import { Sunny } from '@element-plus/icons-vue'
-import { LANG, localeMap } from '@/locales'
+import { i18n, LANGUE, localeMap } from '@/locales'
 import { useLangue } from '@/store'
 
 const langue = useLangue()
 
-const handleChangeLang = (lang: LANG): void => {
+const handleChangeLang = (lang: LANGUE): void => {
+  if (langue.langue === lang) {
+    return
+  }
   langue.changeLang(lang)
+  i18n.global.locale = lang
 }
 </script>
 

@@ -1,17 +1,17 @@
 import { defineStore } from 'pinia'
-import { LANG } from '@/locales'
+import { LANGUE } from '@/locales'
 
 interface State {
-  lang: LANG
+  langue: LANGUE
 }
 
 const useLangue = defineStore('langue', {
   state: (): State => ({
-    lang: LANG.ZH_CN
+    langue: LANGUE.ZH_CN
   }),
   actions: {
-    changeLang(lang: LANG) {
-      this.lang = lang
+    changeLang(langue: LANGUE) {
+      this.langue = langue
     }
   }
 })

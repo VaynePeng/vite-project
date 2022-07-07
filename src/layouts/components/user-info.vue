@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import avatar from '@/assets/images/avatar.jpg'
+import logOut from '@/utils/log-out'
+
+const handleLogOut = (): void => {
+  logOut()
+}
 </script>
 
 <template>
@@ -10,8 +15,9 @@ import avatar from '@/assets/images/avatar.jpg'
     </div>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item> 测试菜单 </el-dropdown-item>
-        <el-dropdown-item divided> 退出登录 </el-dropdown-item>
+        <el-dropdown-item @click="handleLogOut">
+          {{ $t('signOut') }}
+        </el-dropdown-item>
       </el-dropdown-menu>
     </template>
   </el-dropdown>

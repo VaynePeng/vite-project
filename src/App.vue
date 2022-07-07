@@ -6,7 +6,7 @@ const langue = useLangue()
 </script>
 
 <template>
-  <el-config-provider :locale="elementLocale[langue.lang]">
+  <el-config-provider :locale="elementLocale[langue.langue]">
     <router-view />
   </el-config-provider>
 </template>
