@@ -6,6 +6,7 @@ import langue from './langue'
 const i18n = createI18n({
   locale: LANGUE.ZH_CN,
   fallbackLocale: LANGUE.ZH_CN,
+  globalInjection: true,
   messages: {
     ...langue
   }

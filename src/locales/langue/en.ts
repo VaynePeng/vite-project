@@ -1,6 +1,0 @@
-export default {
-  signOut: 'Sign out',
-  signIn: 'Sign in',
-  systemName: 'Digital lease operation management system',
-  submit: 'submit'
-}

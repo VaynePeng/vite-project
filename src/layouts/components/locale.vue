@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { Sunny } from '@element-plus/icons-vue'
-import { i18n, LANGUE, localeMap } from '@/locales'
+import { LANGUE, localeMap } from '@/locales'
 import { useLangue } from '@/store'
 
 const langue = useLangue()
 
 const handleChangeLang = (lang: LANGUE): void => {
-  if (langue.langue === lang) {
-    return
-  }
   langue.changeLang(lang)
-  i18n.global.locale = lang
 }
 </script>
 
@@ -40,7 +36,7 @@ const handleChangeLang = (lang: LANGUE): void => {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 var(--menu-padding);
+    padding: 0 10px;
   }
 }
 </style>

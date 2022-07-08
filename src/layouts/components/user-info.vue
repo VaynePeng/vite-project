@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import avatar from '@/assets/images/avatar.jpg'
-import logOut from '@/utils/log-out'
 
-const handleLogOut = (): void => {
-  logOut()
+import signOut from '@/utils/sign-out'
+
+const handleSignOut = (): void => {
+  signOut()
 }
 </script>
 
@@ -15,7 +16,7 @@ const handleLogOut = (): void => {
     </div>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item @click="handleLogOut">
+        <el-dropdown-item @click="handleSignOut">
           {{ $t('signOut') }}
         </el-dropdown-item>
       </el-dropdown-menu>
@@ -29,7 +30,7 @@ const handleLogOut = (): void => {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 var(--menu-padding);
+    padding: 0 10px;
   }
   &--avatar {
     width: 25px;
